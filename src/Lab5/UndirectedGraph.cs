@@ -230,6 +230,8 @@ namespace Lab5
                 // u = head(Q)
                 var node = queue.Peek();
 
+                // We should sort Neighbors first
+
                 foreach( var neighbor in node.Neighbors )
                 {
                     if( neighbor.Color == Color.White)
