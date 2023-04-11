@@ -8,7 +8,7 @@ namespace Lab5
         White, Gray, Black
     }
 
-    public class Node
+    public class Node  : IComparable<Node>
     {
         public string Name { get; set; }
         public List<Node> Neighbors { get; set; }
@@ -20,6 +20,16 @@ namespace Lab5
 
             Name = name;
             Color = color;
+        }
+
+        public int CompareTo(Node other)
+        {
+            return this.Name.CompareTo(other.Name);
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

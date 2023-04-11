@@ -6,9 +6,12 @@ namespace Lab5
     {
         static void Main(string[] args)
         {
-            UndirectedGraph undirectedGraph = new UndirectedGraph("../../../graphs/graph1.txt");
+            UndirectedGraph undirectedGraph = new UndirectedGraph("../../../graphs/graph4.txt");
 
             Console.WriteLine(undirectedGraph);
+
+            var startingNode = undirectedGraph.GetNodeByName("i");
+            undirectedGraph.DFS(startingNode);
         }
     }
 }
