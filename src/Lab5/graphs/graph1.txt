@@ -7,3 +7,6 @@ b c
 
 b e
 b d
+
+# 1 connected component
+# a and c are reachable

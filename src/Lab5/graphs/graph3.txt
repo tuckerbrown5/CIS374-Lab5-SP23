@@ -12,4 +12,4 @@ h i
 g i
 
 
-# 3 connected components
+# 2 connected components

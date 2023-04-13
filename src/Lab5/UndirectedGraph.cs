@@ -231,6 +231,7 @@ namespace Lab5
                 var node = queue.Peek();
 
                 // We should sort Neighbors first
+                node.Neighbors.Sort();
 
                 foreach( var neighbor in node.Neighbors )
                 {
