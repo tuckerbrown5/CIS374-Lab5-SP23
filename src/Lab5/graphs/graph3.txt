@@ -12,4 +12,5 @@ h i
 g i
 
 
-# 2 connected components
+# 3 connected components
+# f is an island
