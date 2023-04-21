@@ -94,7 +94,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void SavnnahIsReachable()
+        public void SavannahIsReachable()
         {
             UndirectedGraph undirectedGraph = new UndirectedGraph("../../../graphs/Savannah.txt");
 
@@ -105,19 +105,18 @@ namespace UnitTests
             Assert.IsTrue(undirectedGraph.IsReachable("a", "j"));
             Assert.IsTrue(undirectedGraph.IsReachable("b", "i"));
 
+
             Assert.IsFalse(undirectedGraph.IsReachable("a", "d"));
             Assert.IsFalse(undirectedGraph.IsReachable("d", "j"));
 
         }
 
         [TestMethod]
-        public void SavnnahConnectedComponents()
+        public void SavannahConnectedComponents()
         {
             UndirectedGraph undirectedGraph = new UndirectedGraph("../../../graphs/Savannah.txt");
 
             Assert.AreEqual(2, undirectedGraph.ConnectedComponents);
-
-
         }
     }
 }
