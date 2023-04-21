@@ -2,7 +2,7 @@
 a b c d e f g h i j
 
 # edges
-g g
+g i
 h j
 e i 
 e g
